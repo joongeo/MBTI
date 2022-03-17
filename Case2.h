@@ -10,7 +10,7 @@ using namespace std;
 
 const string personalities[16] = { "INFP", "ENFP", "INFJ", "ENFJ", "INTJ", "ENTJ", "INTP", "ENTP", "ISFP", "ESFP", "ISTP", "ESTP", "ISFJ", "ESFJ", "ISTJ", "ESTJ" };
 
-int rmatrix[16][16] = {
+int couplemat[16][16] = {
 	{2, 2, 2, 1, 2, 1, 2, 2, 5, 5, 5, 5, 5, 5, 5, 5},
 	{2, 2, 1, 2, 1, 2, 2, 2, 5, 5, 5, 5, 5, 5, 5, 5},
 	{2, 1, 2, 2, 2, 2, 2, 1, 5, 5, 5, 5, 5, 5, 5, 5},
@@ -60,7 +60,7 @@ public:
 	}
 
 	void relationship(int a, int b) { //조합을 최종적으로 반환
-		int factor = rmatrix[a][b];
+		int factor = couplemat[a][b];
 
 		switch (factor) {
 		case 1:
