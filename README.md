@@ -1,5 +1,5 @@
 # MBTI
 
 3 functions 
-
-hihihi;
+test
+hihihi; sssdfs
